@@ -1,0 +1,23 @@
+{
+    "name": "ninjasimon/laravel-persistable-events",
+    "description": "Simple persistence of Laravel events",
+    "keywords": ["composer", "package", "laravel", "events", "eventstore", "database", "persistence"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Simon",
+            "email": "simonsorich@gmail.com"
+        }
+    ],
+    "type": "project",
+    "require": {
+		"php": ">=5.6.4",
+		"laravel/framework": ">=5.3"
+    },
+    "autoload": {
+        "psr-4": {
+		"Tests\\": "tests/",
+            	"PersistableEvents\\": "packages/laravel-persistable-events/src/PersistableEvents/"
+	}
+    }
+}
