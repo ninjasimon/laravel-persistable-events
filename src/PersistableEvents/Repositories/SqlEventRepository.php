@@ -24,4 +24,10 @@ class SqlEventRepository implements EventRepositoryInterface
             'timestamp' => $event->getTimestamp(),
         ]);
     }
+
+    public function deleteAllEvents()
+    {
+        $this->dbConnection->table('event_store')
+        ->delete();
+    }
 }

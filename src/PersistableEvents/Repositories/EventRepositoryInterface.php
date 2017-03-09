@@ -8,4 +8,6 @@ interface EventRepositoryInterface {
 
     public function writeEvent(PersistableEvent $event);
 
+    public function deleteAllEvents();
+
 }
