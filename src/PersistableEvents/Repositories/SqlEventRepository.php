@@ -30,4 +30,11 @@ class SqlEventRepository implements EventRepositoryInterface
         $this->dbConnection->table('event_store')
         ->delete();
     }
+
+    public function deleteEventById($eventId)
+    {
+        $this->dbConnection->table('event_store')
+        ->where('id', $eventId)
+        ->delete();
+    }
 }

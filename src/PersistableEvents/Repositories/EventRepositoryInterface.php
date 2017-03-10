@@ -10,4 +10,6 @@ interface EventRepositoryInterface {
 
     public function deleteAllEvents();
 
+    public function deleteEventById($eventId);
+
 }
